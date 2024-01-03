@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev-host": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@mdi/font": "^7.4.47",
+    "vue": "^3.3.11",
+    "vue-router": "^4.2.5",
+    "vuetify": "^3.4.9"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.5.2",
+    "vite": "^5.0.8"
+  },
+  "volta": {
+    "node": "20.10.0",
+    "npm": "10.2.5"
+  }
+}
