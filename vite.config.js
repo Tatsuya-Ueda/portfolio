@@ -10,5 +10,6 @@ export default defineConfig({
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
-  base: "/myWiki/",
+  // Github Pagesへdeployするためのbaseを設定
+  base: "/portfolio/",
 });
