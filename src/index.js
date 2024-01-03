@@ -1,5 +1,5 @@
 // import mdi
-import "@mdi/font/css/materialdesignicons.css"; // REVIEW: なぜ@で名前解決できているか不明
+import "@mdi/font/css/materialdesignicons.css"; // "/node_modules"直下として名前解決しているらしい
 
 // Vueアプリケーションインスタンスを作成するために必要なimport
 import { createApp } from "vue";
