@@ -2,9 +2,7 @@ name: Build static contents and deploy to Pages
 
 on:
   push:
-    branches:
-      - main # Set a branch name to trigger deployment
-  pull_request:
+    branches: ["main"]
 
 # GITHUB_TOKEN のパーミッションを設定し、GitHub Pages へのデプロイを許可します
 permissions:
