@@ -46,6 +46,7 @@
   /* 子要素をflexにして中央揃えかつ横並びにする */
   display: flex;
   align-items: center;
+  max-width: 275px;
 }
 #summary #sign-kanji {
   width: fit-content;
