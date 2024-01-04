@@ -1,4 +1,5 @@
 <script setup>
+// viteではrequireが使えないため，importで代替する．
 import imgIzumo from "@/assets/img/izumo.jpg";
 </script>
 

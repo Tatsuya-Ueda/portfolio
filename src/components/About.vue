@@ -1,5 +1,4 @@
 <script setup>
-// viteではrequireが使えないため，importで代替する．
 </script>
 
 <template>
