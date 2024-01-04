@@ -1,4 +1,11 @@
-<script setup>
+<script>
+export default {
+  methods: {
+    openInNewWindow(url) {
+      window.open(url, "_blank");
+    },
+  },
+};
 </script>
 
 <template>
