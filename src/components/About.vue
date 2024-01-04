@@ -37,7 +37,7 @@ export default {
         density="compact"
         icon="mdi-github"
         elevation="2"
-        href="https://github.com/Tatsuya-Ueda"
+        @click="openInNewWindow('https://github.com/Tatsuya-Ueda')"
       ></v-btn>
       <v-btn
         style="margin-left: 4px"
