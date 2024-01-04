@@ -1,5 +1,11 @@
-<script setup>
-// viteではrequireが使えないため，importで代替する．
+<script>
+export default {
+  methods: {
+    openInNewWindow(url) {
+      window.open(url, "_blank");
+    },
+  },
+};
 </script>
 
 <template>
@@ -31,7 +37,16 @@
         density="compact"
         icon="mdi-github"
         elevation="2"
-        href="https://github.com/Tatsuya-Ueda"
+        @click="openInNewWindow('https://github.com/Tatsuya-Ueda')"
+      ></v-btn>
+      <v-btn
+        style="margin-left: 4px"
+        variant="flat"
+        size="large"
+        density="compact"
+        icon="mdi-open-in-new"
+        elevation="2"
+        @click="openInNewWindow('https://lapras.com/public/1GU07MN')"
       ></v-btn>
     </v-card-text>
   </v-card>

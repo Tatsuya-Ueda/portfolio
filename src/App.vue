@@ -83,7 +83,6 @@ export default {
       </div>
     </transition>
   </router-view>
-  <!-- 以下，いろいろやって遊ぶとこ -->
 </template>
 
 <style>
