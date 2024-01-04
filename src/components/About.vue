@@ -39,6 +39,15 @@ export default {
         elevation="2"
         href="https://github.com/Tatsuya-Ueda"
       ></v-btn>
+      <v-btn
+        style="margin-left: 4px"
+        variant="flat"
+        size="large"
+        density="compact"
+        icon="mdi-open-in-new"
+        elevation="2"
+        @click="openInNewWindow('https://lapras.com/public/1GU07MN')"
+      ></v-btn>
     </v-card-text>
   </v-card>
 </template>
