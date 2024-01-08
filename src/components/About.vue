@@ -1,12 +1,4 @@
-<script>
-export default {
-  methods: {
-    openInNewWindow(url) {
-      window.open(url, "_blank");
-    },
-  },
-};
-</script>
+<script></script>
 
 <template>
   <h1>プロフィール</h1>
@@ -37,7 +29,8 @@ export default {
         density="compact"
         icon="mdi-github"
         elevation="2"
-        @click="openInNewWindow('https://github.com/Tatsuya-Ueda')"
+        href="https://github.com/Tatsuya-Ueda"
+        target="_blank"
       ></v-btn>
       <v-btn
         style="margin-left: 4px"
@@ -46,7 +39,8 @@ export default {
         density="compact"
         icon="mdi-open-in-new"
         elevation="2"
-        @click="openInNewWindow('https://lapras.com/public/1GU07MN')"
+        href="https://lapras.com/public/1GU07MN"
+        target="_blank"
       ></v-btn>
       <v-btn
         style="margin-left: 4px"
@@ -55,7 +49,8 @@ export default {
         density="compact"
         icon="mdi-open-in-new"
         elevation="2"
-        @click="openInNewWindow('https://atcoder.jp/users/actat')"
+        href="https://atcoder.jp/users/actat"
+        target="_blank"
       ></v-btn>
     </v-card-text>
   </v-card>
