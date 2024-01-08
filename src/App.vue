@@ -2,15 +2,24 @@
 export default {
   data() {
     return {
-      windowWidth: window.innerWidth,
+      mediaType: this.getMediaType(),
     };
   },
   mounted() {
-    window.addEventListener("resize", this.resizeWindow); // リサイズ時発火
+    window.addEventListener("resize", this.windowResized); // リサイズ時発火
   },
   methods: {
-    resizeWindow() {
-      this.windowWidth = window.innerWidth;
+    windowResized() {
+      this.mediaType = this.getMediaType();
+    },
+    getMediaType() {
+      if (window.innerWidth >= 1024) {
+        return "pc";
+      } else if (window.innerWidth >= 425) {
+        return "tablet";
+      } else {
+        return "smartphone";
+      }
     },
   },
 };
@@ -34,9 +43,9 @@ export default {
     <!-- 間を空ける -->
     <v-spacer></v-spacer>
     <!-- ボタン -->
-    <v-btn v-if="windowWidth >= 1024" variant="flat" size="x-small" density="comfortable" icon="mdi-monitor" elevation="0"></v-btn>
+    <v-btn v-if="mediaType === 'pc'" variant="flat" size="x-small" density="comfortable" icon="mdi-monitor" elevation="0"></v-btn>
     <v-btn
-      v-else-if="windowWidth >= 425"
+      v-else-if="mediaType === 'tablet'"
       variant="flat"
       size="x-small"
       density="comfortable"
