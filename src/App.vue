@@ -103,6 +103,7 @@ export default {
       "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Meiryo", "sans-serif";
     /* 多くのブラウザのデフォルトでは，16pxが主流らしい．あえて明示する */
     font-size: 16px;
+    line-height: 1.75;
     color: #212121; /* grey-darken-4*/
   }
   nav {
