@@ -22,57 +22,27 @@ export default {
     <!-- router-link -->
     <v-tabs height="40px">
       <router-link to="/">
-        <v-tab
-          slider-color="orange-darken-4"
-          color="orange-darken-4"
-          elevation="4"
-          text="Top"
-        />
+        <v-tab slider-color="orange-darken-4" color="orange-darken-4" elevation="4" text="Top" />
       </router-link>
       <router-link to="/about">
-        <v-tab
-          slider-color="orange-darken-4"
-          color="orange-darken-4"
-          elevation="4"
-          text="About"
-        />
+        <v-tab slider-color="orange-darken-4" color="orange-darken-4" elevation="4" text="About" />
       </router-link>
       <router-link to="/works">
-        <v-tab
-          slider-color="orange-darken-4"
-          color="orange-darken-4"
-          elevation="4"
-          text="Works"
-        />
+        <v-tab slider-color="orange-darken-4" color="orange-darken-4" elevation="4" text="Works" />
       </router-link>
     </v-tabs>
     <!-- 間を空ける -->
     <v-spacer></v-spacer>
     <!-- ボタン -->
-    <v-btn
-      v-if="windowWidth >= 1024"
-      variant="flat"
-      size="x-small"
-      density="comfortable"
-      icon="mdi-monitor"
-      elevation="0"
-    ></v-btn>
+    <v-btn v-if="windowWidth >= 1024" variant="flat" size="x-small" density="comfortable" icon="mdi-monitor" elevation="0"></v-btn>
     <v-btn
       v-else-if="windowWidth >= 425"
       variant="flat"
       size="x-small"
       density="comfortable"
       icon="mdi-tablet-cellphone"
-      elevation="0"
-    ></v-btn>
-    <v-btn
-      v-else
-      variant="flat"
-      size="x-small"
-      density="comfortable"
-      icon="mdi-cellphone"
-      elevation="0"
-    ></v-btn>
+      elevation="0"></v-btn>
+    <v-btn v-else variant="flat" size="x-small" density="comfortable" icon="mdi-cellphone" elevation="0"></v-btn>
   </nav>
   <div id="nav-spacer"></div>
   <!-- メニュー以下 -->
@@ -99,8 +69,7 @@ export default {
     /* 個人的な好みから，ユニバーサルデザインフォントを最優先にする */
     /* 最終的には，ほぼ全てのウェブサイトが採用しているといわれる sans-serif にフォールバックさせる */
     /* 英字はRobotoがかっこいいが，WebFontなので若干a11yに影響する */
-    font-family: "BIZ UDPGothic", "Helvetica Neue", "Arial",
-      "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Meiryo", "sans-serif";
+    font-family: "BIZ UDPGothic", "Helvetica Neue", "Arial", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Meiryo", "sans-serif";
     /* 多くのブラウザのデフォルトでは，16pxが主流らしい．あえて明示する */
     font-size: 16px;
     line-height: 1.75;
