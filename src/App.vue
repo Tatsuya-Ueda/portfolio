@@ -164,10 +164,13 @@ export default {
     background-color: grey;
   }
   ul {
+    width: fit-content;
     margin: 8px 0px 8px 0px;
     padding: 0;
+    line-height: 1.75;
   }
   ul li {
+    width: fit-content;
     list-style-position: inside; /* リストの点を，要素の内側に指定． */
     /* REVIEW: li要素で「1字だけぶら下げ」を実現する方法がよくわかっていない */
     padding-left: 0.4em;
