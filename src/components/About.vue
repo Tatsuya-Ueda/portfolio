@@ -31,7 +31,8 @@
         <li>
           習慣：ランニング，プログラミング
           <v-tooltip activator="parent" location="bottom">
-            <p>今の習慣です．１か月ほどでマイブームがころころと変わります．</p>
+            <p>現在も続けている習慣です． マイブームは１か月ほどでころころ変わります．</p>
+            <p>Pygame，Pyglet，Pixi.jsを触っていた時期もあれば， Stable Diffusionでのイラスト生成にハマっていた時期もあります．</p>
             <p>多肉植物を育てていたこともあります（今も世話をしています）．</p>
           </v-tooltip>
         </li>
