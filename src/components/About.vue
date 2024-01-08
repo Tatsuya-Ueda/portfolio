@@ -48,6 +48,15 @@ export default {
         elevation="2"
         @click="openInNewWindow('https://lapras.com/public/1GU07MN')"
       ></v-btn>
+      <v-btn
+        style="margin-left: 4px"
+        variant="flat"
+        size="large"
+        density="compact"
+        icon="mdi-open-in-new"
+        elevation="2"
+        @click="openInNewWindow('https://atcoder.jp/users/actat')"
+      ></v-btn>
     </v-card-text>
   </v-card>
 </template>
