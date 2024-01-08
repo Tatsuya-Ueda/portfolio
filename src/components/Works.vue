@@ -7,7 +7,10 @@
     Pythonで二十数問解いたことがありますが，あるときc++で解きたくなったため，一度Progressをリセットしてc++で解き直しています．
   </p>
   <a href="https://projecteuler.net/progress=tat_u" target="_blank">
-    <img id="project-euler" src="https://projecteuler.net/profile/tat_u.png"
+    <img
+      id="project-euler"
+      src="https://projecteuler.net/profile/tat_u.png "
+      alt="Project Eulerの進捗"
   /></a>
   <h2>機械学習モデルの構築</h2>
   <h2>タワーディフェンスゲームの制作</h2>
