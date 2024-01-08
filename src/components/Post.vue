@@ -2,7 +2,7 @@
 export default {
   data() {
     return {
-      content: "",
+      html: "",
     };
   },
   created() {
@@ -14,8 +14,9 @@ export default {
   },
   methods: {
     async fetchData() {
-      let res = await fetch("/portfolio/posts/dummy.json");
-      this.content = await res.json();
+      let res = await fetch(`/portfolio/posts/dummy_${this.$route.params.post_id % 2}.json`);
+      let json = await res.json();
+      this.html = json.html;
     },
   },
 };
@@ -23,7 +24,7 @@ export default {
 
 <template>
   <div>記事ID: {{ $route.params.post_id }}</div>
-  <div id="content">{{ content }}</div>
+  <div id="content" v-html="html"></div>
 </template>
 
 <style scoped></style>
