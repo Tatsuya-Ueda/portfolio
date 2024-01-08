@@ -14,7 +14,7 @@ export default {
   },
   methods: {
     async fetchData() {
-      let res = await fetch(`/portfolio/posts/dummy_${this.$route.params.post_id % 2}.json`);
+      let res = await fetch(`/portfolio/posts/${this.$route.params.post_id}.json`);
       let json = await res.json();
       this.html = json.html;
     },
