@@ -22,27 +22,17 @@
     コンピュータを使わずに解答を求めることが極めて困難な問題がほとんどを占め，計算効率の良いアルゴリズムを任意のプログラミング言語で実装して解いていきます．
   </p>
   <br />
-  <p>
-    Pythonで二十数問解いたことがありますが，あるときc++で解きたくなったため，一度Progressをリセットしてc++で解き直しています．
-  </p>
+  <p>Pythonで二十数問解いたことがありますが，あるときc++で解きたくなったため，一度Progressをリセットしてc++で解き直しています．</p>
   <a href="https://projecteuler.net/progress=tat_u" target="_blank">
-    <img
-      id="project-euler"
-      src="https://projecteuler.net/profile/tat_u.png "
-      alt="Project Eulerの進捗"
-  /></a>
+    <img id="project-euler" src="https://projecteuler.net/profile/tat_u.png " alt="Project Eulerの進捗" />
+  </a>
   <h2>機械学習モデルの構築</h2>
-  <p>
-    大学の授業で機械学習を学び，過去にKaggleで開催されたコンペティションに挑戦しました．
-  </p>
+  <p>大学の授業で機械学習を学び，過去にKaggleで開催されたコンペティションに挑戦しました．</p>
   <h2>タワーディフェンスゲームの制作</h2>
-  <p>
-    大学の授業で，Javaを使ってタワーディフェンスゲームをチーム開発しました．
-  </p>
+  <p>大学の授業で，Javaを使ってタワーディフェンスゲームをチーム開発しました．</p>
   <h2>PythonでJavaデザインパターンを学ぶ</h2>
   <p>
-    ほんの思い付きで，「Java言語で学ぶデザインパターン入門第3版」（結城
-    浩著）で紹介されているJavaデザインパターンのうち半分程度を，
+    ほんの思い付きで，「Java言語で学ぶデザインパターン入門第3版」（結城 浩著）で紹介されているJavaデザインパターンのうち半分程度を，
     Pythonで実装してみました．
   </p>
 
