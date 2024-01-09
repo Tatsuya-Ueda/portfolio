@@ -15,7 +15,7 @@ export default {
   methods: {
     fetchData() {
       console.log(`post_id: ${this.$route.params.post_id}`);
-      fetch(`/portfolio/posts/${this.$route.params.post_id}.json`, {
+      fetch(`/portfolio/posts/${this.$route.params.post_id.toLowerCase()}.json`, {
         method: "GET",
       })
         .then((res) => {
