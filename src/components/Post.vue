@@ -14,6 +14,7 @@ export default {
   },
   methods: {
     fetchData() {
+      console.log(`post_id: ${this.$route.params.post_id}`);
       fetch(`/portfolio/posts/${this.$route.params.post_id}.json`, {
         method: "GET",
       })
@@ -42,7 +43,6 @@ export default {
 </script>
 
 <template>
-  <div>記事ID: {{ $route.params.post_id }}</div>
   <div id="content" v-html="html"></div>
 </template>
 
