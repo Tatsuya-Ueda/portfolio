@@ -1,18 +1,36 @@
+// Import
 const fs = require("fs");
-const projectRoot = __dirname + "/..";
-const targetDir = projectRoot + "/src/posts";
-console.log(targetDir);
-const files = fs.readdirSync(targetDir);
-console.log(files);
-// .mdファイルの抽出
-const mdFiles = files.filter((filename) => filename.split(".").pop() === "md");
-console.log(mdFiles);
 const { marked } = require("marked");
 
-// １ファイルまるごと読み込む
-const text = fs.readFileSync(`${targetDir}/${mdFiles[0]}`, "utf-8");
-const html = marked.parse(text);
-// オブジェクトを作ってからJSON.stringify
-const obj = { html: html };
-const jsonStr = JSON.stringify(obj);
-fs.writeFileSync("output.json", jsonStr);
+// Helper functions
+const getFileName = (path) => {
+  path = path.replace("\\", "/");
+  return path.split("/").pop();
+};
+const getBaseName = (path) => {
+  path = path.replace("\\", "/");
+  return path.split("/").pop().split(".").shift();
+};
+const getExtention = (path) => {
+  path = path.replace("\\", "/");
+  return path.split("/").pop().split(".").pop();
+};
+
+// Define paths
+const pathRoot = __dirname + "/.."; // Root dir of the project
+const pathIn = pathRoot + "/src/posts";
+const pathOut = pathRoot + "/public/posts";
+
+// Filter .md files from target directory
+const files = fs.readdirSync(pathIn);
+const mdFiles = files.filter((filename) => getExtention(filename) === "md");
+
+// Convert .md files to .json
+for (let i = 0; i < mdFiles.length; i++) {
+  const mdFile = mdFiles[i];
+  const text = fs.readFileSync(`${pathIn}/${mdFile}`, "utf-8");
+  const html = marked.parse(text);
+  const jsonStr = JSON.stringify({ html: html });
+  const filenameOut = getBaseName(mdFile) + ".json";
+  fs.writeFileSync(`${pathOut}/${filenameOut}`, jsonStr);
+}
