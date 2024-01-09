@@ -5,14 +5,6 @@
 - npm: v10.2.5
 - Volta v1.1.1
 
-# 使用パッケージ
-
-コマンドベースで列挙する．
-
-- npm i vue-router
-- npm i vuetify
-- npm i @mdi/font
-
 # 起動の方法
 
 ```
