@@ -9,6 +9,9 @@ export default {
     // viewが作成された直後にデータを取得する．
     this.fetchData();
   },
+  updated() {
+    MathJax.typeset();
+  },
   watch: {
     $route: "fetchData",
   },
