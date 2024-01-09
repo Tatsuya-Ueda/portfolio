@@ -8,7 +8,8 @@
     "dev-host": "vite --host",
     "build": "vite build",
     "preview": "vite preview",
-    "compile-posts": "node ./scripts/mdToPostJSON.cjs"
+    "compile-posts": "mkdirp ./public/posts && node ./scripts/mdToPostJSON.cjs",
+    "clean-posts": "rimraf ./public"
   },
   "dependencies": {
     "@mdi/font": "^7.4.47",
