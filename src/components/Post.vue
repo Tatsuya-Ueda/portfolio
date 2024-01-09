@@ -13,10 +13,23 @@ export default {
     $route: "fetchData",
   },
   methods: {
-    async fetchData() {
-      let res = await fetch(`/portfolio/posts/${this.$route.params.post_id}.json`);
-      let json = await res.json();
-      this.html = json.html;
+    fetchData() {
+      fetch(`/portfolio/posts/${this.$route.params.post_id}.json`, {
+        method: "GET",
+      })
+        .then((res) => {
+          if (!res.ok) {
+            console.log("Server error.");
+          } else {
+            // fetch成功時
+            res.json().then((json) => {
+              this.html = json.html;
+            });
+          }
+        })
+        .catch((err) => {
+          console.log("Error.", err);
+        });
     },
   },
 };
