@@ -3,16 +3,16 @@
 手こずったため覚え書き．
 
 $$
-S = \{k | k \in \mathbb{Z}, L-A <= kM <= R-A\}
+S = \lbrace k | k \in \mathbb{Z}, L-A <= kM <= R-A \rbrace
 $$
 
 $$
-S = \{k | k \in \mathbb{Z}, \frac{L-A}{M} \leq k \leq \frac{R-A}{M} \}
+S = \left\lbrace k | k \in \mathbb{Z}, \frac{L-A}{M} \leq k \leq \frac{R-A}{M} \right\rbrace
 $$
 
 こう表すと，$S$ の要素の数，$|S|$ が答えとなるはず．
 
-ここで，2 つの実数 $a, b (a \leq b)$ がなす範囲 $[a, b]$ 内にある整数の数は，
+ここで，2 つの実数 $a, b ~ (a \leq b)$ がなす範囲 $[a, b]$ 内にある整数の数は，
 
 $$
 \lfloor b \rfloor - \lceil a \rceil + 1
