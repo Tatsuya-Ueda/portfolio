@@ -8,7 +8,7 @@
     "dev-host": "vite --host",
     "build": "vite build",
     "preview": "vite preview",
-    "compile-post": "node ./scripts/mdToPostJSON.cjs"
+    "compile-posts": "node ./scripts/mdToPostJSON.cjs"
   },
   "dependencies": {
     "@mdi/font": "^7.4.47",
