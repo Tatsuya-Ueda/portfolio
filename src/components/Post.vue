@@ -22,9 +22,15 @@ export default {
             console.log("Server error.");
           } else {
             // fetch成功時
-            res.json().then((json) => {
-              this.html = json.html;
-            });
+            res
+              .json()
+              .then((json) => {
+                this.html = json.html;
+              })
+              .catch((err) => {
+                this.html = "<h1>Not Found</h1>";
+                console.log("Fetch succeeded but couldn't load a post.", err);
+              });
           }
         })
         .catch((err) => {
