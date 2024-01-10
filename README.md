@@ -12,6 +12,14 @@ npm install  # 必要なNodeパッケージを一括ダウンロード
 npm run dev  # 起動
 ```
 
-# GitHub Pages
+# 公開 URL
 
-https://tatsuya-ueda.github.io/portfolio/
+## GitHub Pages
+
+こちらは Outdated version です．最新のものは Vercel で公開しています．
+
+- https://tatsuya-ueda.github.io/portfolio/
+
+## Vercel
+
+- https://tat-u-portfolio.vercel.app
