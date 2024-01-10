@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "npm run compile-posts && vite",
     "dev-host": "npm run compile-posts && vite --host",
     "build": "npm run compile-posts && vite build",
     "preview": "vite preview",
